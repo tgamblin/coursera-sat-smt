@@ -43,7 +43,7 @@ s.add(c0 == Or(And(a1, b1), And(a1, c1), And(b1, c1)))
 s.add(c1 == Or(And(a2, b2), And(a2, c2), And(b2, c2)))
 s.add(c2 == Or(And(a3, b3), And(a3, c3), And(b3, c3)))
 s.add(c3 == Or(And(a4, b4), And(a4, c4), And(b4, c4)))
-#s.add(Not(c4))  # no carry in
+s.add(Not(c4))  # no carry in
 
 #s.add(a1, a2,      Not(a3), a4)  # 13
 #s.add(b1, Not(b2), b3,      b4)  # 11
