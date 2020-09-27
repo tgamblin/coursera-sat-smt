@@ -1,0 +1,20 @@
+p q
+-q -r
+-p q
+-q r
+
+
+case p:
+  q (use p)
+  -r (use q)
+  r (use q)
+  U
+
+case -p:
+  q (use -p)
+  -r (use q)
+  r (use q)
+  U
+
+2 recursive calls (DPLL quiz)
+7 total steps     (DPLL -> resolution question)

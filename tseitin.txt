@@ -1,0 +1,38 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+p q  (p v q)    (-p v -q)    (p v q) ^ (-p v -q)
+0 0  0          1            0
+0 1  1          1            1
+1 0  1          1            1
+1 1  1          0            0
+
+
+Quiz;
+
+p v (q ^ r)
+
+Subclauses:
+  A: p v (q ^ r)
+  B: (q ^ r)
+  p
+  q
+  r
+
+Transformed:
+A
+A <-> p v B
+B <-> q ^ r
+
+
+ A
+
+-A  p  B
+ A -p
+ A -B
+
+ B -q -r
+-B  q
+-B  r
+
+7 total clauses

@@ -1,0 +1,16 @@
+Given:
+
+a >= 0
+c >= 0
+a + b = 3c
+a + 3 >= b - c
+
+If transformed to slack form, how many variables arer there?
+
+
+y1 = -a
+y2 = -c
+y3 - a - b
+y4 = a - b -c + 3
+
+7 variables total
